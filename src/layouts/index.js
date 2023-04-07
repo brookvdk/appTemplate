@@ -28,22 +28,10 @@ const store = createStore(
 );
 
 const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <div>Hello world!</div>,
-  },
-  {
-    path: "/dashboard",
-    element: <DashboardLayout />,
-  },
-  {
-    path: "/login",
-    element: <LoginLayout />,
-  },
-  {
-    path: "/main",
-    element: <MainLayout />,
-  }
+  { path: "/", element: <div>Hello world!</div> },
+  { path: "/dashboard", element: <DashboardLayout /> },
+  { path: "/login", element: <LoginLayout /> },
+  { path: "/main", element: <MainLayout /> }
 ]);
 
 const App = () => (
