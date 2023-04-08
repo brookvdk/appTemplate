@@ -6,7 +6,7 @@ const initialState = {
   loginVariable: 'Not clicked',
 };
 
-export default (action, state = initialState) => {
+export default (state = initialState, action) => {
   switch (action.type) {
     case LOGIN_CHANGE:
       return {

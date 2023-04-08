@@ -6,7 +6,7 @@ const initialState = {
   mainVariable: 'Not clicked',
 };
 
-export default (action, state = initialState) => {
+export default (state = initialState, action) => {
   switch (action.type) {
     case MAIN_CHANGE:
       return {

@@ -19,5 +19,6 @@ module.exports = {
   rules: {
     'react/function-component-definition': [2, { namedComponents: 'arrow-function' }],
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
+    'default-param-last': [0],
   },
 };

@@ -6,7 +6,7 @@ const initialState = {
   exampleVariable: false,
 };
 
-export default (action, state = initialState) => {
+export default (state = initialState, action) => {
   switch (action.type) {
     case EXAMPLE_CHANGE:
       return {
