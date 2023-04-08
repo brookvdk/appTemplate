@@ -10,7 +10,7 @@ import thunk from 'redux-thunk';
 import {
   createBrowserRouter,
   RouterProvider,
-} from "react-router-dom";
+} from 'react-router-dom';
 
 import DashboardLayout from './Dashboard';
 import LoginLayout from './Login';
@@ -20,7 +20,7 @@ import rootReducer from '../reducers';
 // eslint-disable-next-line no-underscore-dangle
 const devToolsExtension = window.__REDUX_DEVTOOLS_EXTENSION__;
 
-const composeEnhancers = devToolsExtension && devToolsExtension() || compose;
+const composeEnhancers = devToolsExtension ? devToolsExtension() : compose;
 
 const store = createStore(
   combineReducers(rootReducer),
@@ -28,10 +28,10 @@ const store = createStore(
 );
 
 const router = createBrowserRouter([
-  { path: "/", element: <div>Hello world!</div> },
-  { path: "/dashboard", element: <DashboardLayout /> },
-  { path: "/login", element: <LoginLayout /> },
-  { path: "/main", element: <MainLayout /> }
+  { path: '/', element: <div>Hello world!</div> },
+  { path: '/dashboard', element: <DashboardLayout /> },
+  { path: '/login', element: <LoginLayout /> },
+  { path: '/main', element: <MainLayout /> },
 ]);
 
 const App = () => (
